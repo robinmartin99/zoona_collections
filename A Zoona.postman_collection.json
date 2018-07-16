@@ -1,0 +1,1209 @@
+{
+	"info": {
+		"_postman_id": "02e241a8-ffd2-4959-b5d8-4bec4e419e1f",
+		"name": "A Zoona",
+		"description": "Collection of testing calls for the Zoona system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "dev:  Mock /heartbeat",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-test",
+						"value": "mock",
+						"disabled": true
+					},
+					{
+						"key": "x-api-key-dev",
+						"value": "jK1zZpYm6sF3FTB73a14G67eU6w1Q7Ce",
+						"disabled": true
+					},
+					{
+						"key": "x-api-key-test",
+						"value": "thyLKgcPgtzElKzx3cabHr5nB5GHzjs2",
+						"disabled": true
+					},
+					{
+						"key": "x-api-key",
+						"value": "thyLKgcPgtzElKzx3cabHr5nB5GHzjs2",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://zoona-test.apigee.net/zap/heartbeat",
+					"protocol": "https",
+					"host": [
+						"zoona-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"zap",
+						"heartbeat"
+					]
+				},
+				"description": "Call the development environment heartbeat "
+			},
+			"response": [
+				{
+					"id": "0ce08f0c-8a32-4dd4-8a8e-96f4bfe751b2",
+					"name": "dev:  Mock /heartbeat",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-test",
+								"value": "mock",
+								"disabled": false
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://zoona-test.apigee.net/zap/heartbeat",
+							"protocol": "https",
+							"host": [
+								"zoona-test",
+								"apigee",
+								"net"
+							],
+							"path": [
+								"zap",
+								"heartbeat"
+							]
+						}
+					},
+					"status": "Okay",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, x-api-key, x-api-test, x-api-correlation-id, Authorization, x-requested-with, Accept, Content-Type, Accept-Encoding, Accept-Language, Host, Pragma, Referrer, User-Agent, Cache-Control",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3628800",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "86",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 30 Jun 2018 09:48:21 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookie": [],
+					"body": "\n{\n  \"heartbeatStatus\": \"200\",\n  \"heartbeatMessage\": \"System Available\"\n}\n            "
+				}
+			]
+		},
+		{
+			"name": "dev:  Mock onboardRequest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-test",
+						"value": "test"
+					},
+					{
+						"key": "x-api-key",
+						"value": "jK1zZpYm6sF3FTB73a14G67eU6w1Q7Ce"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://zoona-test.apigee.net/zap/merchant/onboard",
+					"protocol": "https",
+					"host": [
+						"zoona-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"zap",
+						"merchant",
+						"onboard"
+					]
+				},
+				"description": "Call the development environment onboard request"
+			},
+			"response": [
+				{
+					"id": "3ef5d836-23f6-4b52-aba7-dfee4322e583",
+					"name": "dev:  Mock onboardRequest",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-test",
+								"value": "mock",
+								"disabled": false
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://zoona-test.apigee.net/zap//merchant/onboard",
+							"protocol": "https",
+							"host": [
+								"zoona-test",
+								"apigee",
+								"net"
+							],
+							"path": [
+								"zap",
+								"",
+								"merchant",
+								"onboard"
+							]
+						}
+					},
+					"status": "Okay",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, x-api-key, x-api-test, x-api-correlation-id, Authorization, x-requested-with, Accept, Content-Type, Accept-Encoding, Accept-Language, Host, Pragma, Referrer, User-Agent, Cache-Control",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3628800",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "125",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 30 Jun 2018 13:05:30 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookie": [],
+					"body": "\n{\n  \"uuid\": \"5861ce42-6eef-48c4-b5e0-b8b79d5d8d2d\",\n  \"merchant-code\": \"12345677\",\n  \"username\": \"0969999999\"\n}\n            "
+				}
+			]
+		},
+		{
+			"name": "dev:  Mock balanceRequest",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-test",
+						"value": "mock",
+						"disabled": true
+					},
+					{
+						"key": "x-api-key",
+						"value": "jK1zZpYm6sF3FTB73a14G67eU6w1Q7Ce"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://zoona-test.apigee.net/zap/merchant/balance",
+					"protocol": "https",
+					"host": [
+						"zoona-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"zap",
+						"merchant",
+						"balance"
+					]
+				},
+				"description": "Call the development environment balanceRequest "
+			},
+			"response": [
+				{
+					"id": "887639bc-6191-4200-8664-4bee217b9722",
+					"name": "dev:  Mock balanceRequest",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-test",
+								"value": "mock",
+								"disabled": false
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://zoona-test.apigee.net/zap/merchant/balance",
+							"protocol": "https",
+							"host": [
+								"zoona-test",
+								"apigee",
+								"net"
+							],
+							"path": [
+								"zap",
+								"merchant",
+								"balance"
+							]
+						}
+					},
+					"status": "Okay",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, x-api-key, x-api-test, x-api-correlation-id, Authorization, x-requested-with, Accept, Content-Type, Accept-Encoding, Accept-Language, Host, Pragma, Referrer, User-Agent, Cache-Control",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3628800",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "127",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 30 Jun 2018 12:18:25 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookie": [],
+					"body": "\n{\n  \"balance\": \"5800.20\",\n  \"account-status\": \"Active\",\n  \"minimum-balance\": \"50\",\n  \"maximum-balance\": \"10000\"\n}\n            "
+				}
+			]
+		},
+		{
+			"name": "dev:  Mock transactionRequest",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-test",
+						"value": "mock"
+					},
+					{
+						"key": "x-api-key",
+						"value": "jK1zZpYm6sF3FTB73a14G67eU6w1Q7Ce"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://zoona-test.apigee.net/zap/merchant/transactions",
+					"protocol": "https",
+					"host": [
+						"zoona-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"zap",
+						"merchant",
+						"transactions"
+					]
+				},
+				"description": "Call the development environment transactionRequest "
+			},
+			"response": [
+				{
+					"id": "0dc5691c-4bc0-4c33-ab56-3c26f57678fa",
+					"name": "dev:  Mock transactionRequest",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-test",
+								"value": "mock",
+								"disabled": false
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://zoona-test.apigee.net/zap/merchant/transactions",
+							"protocol": "https",
+							"host": [
+								"zoona-test",
+								"apigee",
+								"net"
+							],
+							"path": [
+								"zap",
+								"merchant",
+								"transactions"
+							]
+						}
+					},
+					"status": "Okay",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, x-api-key, x-api-test, x-api-correlation-id, Authorization, x-requested-with, Accept, Content-Type, Accept-Encoding, Accept-Language, Host, Pragma, Referrer, User-Agent, Cache-Control",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3628800",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1063",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 30 Jun 2018 12:20:00 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookie": [],
+					"body": "\n{\n  \"transaction1\": [\n    {\n      \"identification\": \"Payment-code redemption\",\n      \"credit-entry\": {\n        \"currency\": \"ZMW\",\n        \"amount\": 95,\n        \"date\": \"Tue Mar 06 13:46:50 GMT 2018\"\n      },\n      \"payment-detail\": {\n        \"payment-state\": \"paid\",\n        \"payment-code\": \"12345678\",\n        \"valid-until\": \"2018-05-01 15:00:00\",\n        \"amount\": \"100\",\n        \"fee\": \"5\",\n        \"reference\": \"INV-001\"\n      },\n      \"paid-by\": {\n        \"mobile-number\": \"260969888888\",\n        \"channel\": \"Zoona Plus\"\n      }\n    }\n  ],\n  \"transaction2\": [\n    {\n      \"identification\": \"Merchant Payment\",\n      \"correlation-id\": \"2d1401cb-d497-d5c6-a88d-d82a1d605ff2\",\n      \"credit-entry\": {\n        \"currency\": \"ZMW\",\n        \"amount\": 44,\n        \"date\": \"Tue Mar 06 17:01:00 GMT 2018\"\n      },\n      \"payment-detail\": {\n        \"merchant-code\": \"12345678\",\n        \"amount\": 45,\n        \"fee\": 1\n      },\n      \"paid-by\": {\n        \"mobile-number\": \"\",\n        \"channel\": \"OTC cash\",\n        \"reference\": \"joseph p\"\n      }\n    }\n  ]\n}\n            "
+				}
+			]
+		},
+		{
+			"name": "dev:  Mock requestPaymentCode",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-test",
+						"value": "mock"
+					},
+					{
+						"key": "x-api-key",
+						"value": "jK1zZpYm6sF3FTB73a14G67eU6w1Q7Ce"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://zoona-test.apigee.net/zap/payment/code",
+					"protocol": "https",
+					"host": [
+						"zoona-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"zap",
+						"payment",
+						"code"
+					]
+				},
+				"description": "Call the development environment requestPaymentCode"
+			},
+			"response": [
+				{
+					"id": "89f22074-c74d-4012-94bc-b50322028d1d",
+					"name": "dev:  Mock requestPaymentCode",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-test",
+								"value": "mock",
+								"disabled": false
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://zoona-test.apigee.net/zap/payment/code",
+							"protocol": "https",
+							"host": [
+								"zoona-test",
+								"apigee",
+								"net"
+							],
+							"path": [
+								"zap",
+								"payment",
+								"code"
+							]
+						}
+					},
+					"status": "Okay",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, x-api-key, x-api-test, x-api-correlation-id, Authorization, x-requested-with, Accept, Content-Type, Accept-Encoding, Accept-Language, Host, Pragma, Referrer, User-Agent, Cache-Control",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3628800",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "141",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 30 Jun 2018 13:08:33 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookie": [],
+					"body": "\n{\n  \"payment-code\": \"12345678\",\n  \"valid-until\": \"2018-05-01 15:00:00\",\n  \"amount\": 100,\n  \"fee\": 5,\n  \"reference\": \"INV-001\"\n}\n            "
+				}
+			]
+		},
+		{
+			"name": "dev:  Mock queryPaymentCode",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-test",
+						"value": "mock"
+					},
+					{
+						"key": "x-api-key",
+						"value": "jK1zZpYm6sF3FTB73a14G67eU6w1Q7Ce"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://zoona-test.apigee.net/zap/payment/code/242",
+					"protocol": "https",
+					"host": [
+						"zoona-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"zap",
+						"payment",
+						"code",
+						"242"
+					]
+				},
+				"description": "Call the development environment queryPaymentCode "
+			},
+			"response": [
+				{
+					"id": "17501620-088c-44cf-a342-e9fa6ad0da1f",
+					"name": "dev:  Mock queryPaymentCode",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-test",
+								"value": "mock",
+								"disabled": false
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://zoona-test.apigee.net/zap/payment/code/234234",
+							"protocol": "https",
+							"host": [
+								"zoona-test",
+								"apigee",
+								"net"
+							],
+							"path": [
+								"zap",
+								"payment",
+								"code",
+								"234234"
+							]
+						}
+					},
+					"status": "Okay",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, x-api-key, x-api-test, x-api-correlation-id, Authorization, x-requested-with, Accept, Content-Type, Accept-Encoding, Accept-Language, Host, Pragma, Referrer, User-Agent, Cache-Control",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3628800",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "173",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 30 Jun 2018 12:21:57 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookie": [],
+					"body": "\n{\n  \"payment-state\": \"available\",\n  \"payment-code\": \"12345678\",\n  \"valid-until\": \"2018-05-01 15:00:00\",\n  \"amount\": 100,\n  \"fee\": 5,\n  \"reference\": \"INV-001\"\n}\n            "
+				}
+			]
+		},
+		{
+			"name": "dev:  Mock deletePaymentCode",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-api-test",
+						"value": "mock"
+					},
+					{
+						"key": "x-api-key",
+						"value": "jK1zZpYm6sF3FTB73a14G67eU6w1Q7Ce"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://zoona-test.apigee.net/zap/payment/code/2344",
+					"protocol": "https",
+					"host": [
+						"zoona-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"zap",
+						"payment",
+						"code",
+						"2344"
+					]
+				},
+				"description": "Call the development environment delete payment code"
+			},
+			"response": [
+				{
+					"id": "45fc2a15-57dc-4202-9c57-ff664843725d",
+					"name": "dev:  Mock deletePaymentCode",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-api-test",
+								"value": "mock",
+								"disabled": false
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://zoona-test.apigee.net/zap/payment/code/2344",
+							"protocol": "https",
+							"host": [
+								"zoona-test",
+								"apigee",
+								"net"
+							],
+							"path": [
+								"zap",
+								"payment",
+								"code",
+								"2344"
+							]
+						}
+					},
+					"status": "Okay",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, x-api-key, x-api-test, x-api-correlation-id, Authorization, x-requested-with, Accept, Content-Type, Accept-Encoding, Accept-Language, Host, Pragma, Referrer, User-Agent, Cache-Control",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3628800",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "173",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 30 Jun 2018 13:22:47 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookie": [],
+					"body": "\n{\n  \"payment-state\": \"cancelled\",\n  \"payment-code\": \"12345678\",\n  \"valid-until\": \"2018-05-01 15:00:00\",\n  \"amount\": 100,\n  \"fee\": 5,\n  \"reference\": \"INV-001\"\n}\n            "
+				}
+			]
+		},
+		{
+			"name": "dev:  Mock registerWebhook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-test",
+						"value": "mock"
+					},
+					{
+						"key": "x-api-key",
+						"value": "jK1zZpYm6sF3FTB73a14G67eU6w1Q7Ce"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://zoona-test.apigee.net/zap/merchant/notification",
+					"protocol": "https",
+					"host": [
+						"zoona-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"zap",
+						"merchant",
+						"notification"
+					]
+				},
+				"description": "Call the development environment registerWebhook"
+			},
+			"response": [
+				{
+					"id": "c052f794-9bcb-422e-b792-b16557e83669",
+					"name": "dev:  Mock registerWebhook",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-test",
+								"value": "mock",
+								"disabled": false
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://zoona-test.apigee.net/zap//merchant/notification",
+							"protocol": "https",
+							"host": [
+								"zoona-test",
+								"apigee",
+								"net"
+							],
+							"path": [
+								"zap",
+								"",
+								"merchant",
+								"notification"
+							]
+						}
+					},
+					"status": "Okay",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, x-api-key, x-api-test, x-api-correlation-id, Authorization, x-requested-with, Accept, Content-Type, Accept-Encoding, Accept-Language, Host, Pragma, Referrer, User-Agent, Cache-Control",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3628800",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "211",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 30 Jun 2018 14:08:52 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookie": [],
+					"body": "\n{\n  \"message\": \"Webhook registered\",\n  \"webhook\": {\n    \"uuid\": \"5861ce42-6eef-48c4-b5e0-b8b79d5d8d2d\",\n    \"endpoint\": \"http://my.api.example.com/payment\",\n    \"notify-on\": \"receive-payment\"\n  }\n}\n            "
+				}
+			]
+		},
+		{
+			"name": "dev:  Mock listWebhook(s)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-test",
+						"value": "mock"
+					},
+					{
+						"key": "x-api-key",
+						"value": "jK1zZpYm6sF3FTB73a14G67eU6w1Q7Ce"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://zoona-test.apigee.net/zap/merchant/notification",
+					"protocol": "https",
+					"host": [
+						"zoona-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"zap",
+						"merchant",
+						"notification"
+					]
+				},
+				"description": "Call the development environment listWebhooks with optional uuid"
+			},
+			"response": [
+				{
+					"id": "14432c9b-e01c-49c8-a668-e9d1b189dc62",
+					"name": "dev:  Mock listWebhook(s)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-test",
+								"value": "mock",
+								"disabled": false
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://zoona-test.apigee.net/zap/merchant/notification",
+							"protocol": "https",
+							"host": [
+								"zoona-test",
+								"apigee",
+								"net"
+							],
+							"path": [
+								"zap",
+								"merchant",
+								"notification"
+							]
+						}
+					},
+					"status": "Okay",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, x-api-key, x-api-test, x-api-correlation-id, Authorization, x-requested-with, Accept, Content-Type, Accept-Encoding, Accept-Language, Host, Pragma, Referrer, User-Agent, Cache-Control",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3628800",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "371",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 30 Jun 2018 12:59:32 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookie": [],
+					"body": "\n{\n  \"webhooks-available\": [\n    {\n      \"uuid\": \"5861ce42-6eef-48c4-b5e0-b8b79d5d8d2d\",\n      \"endpoint\": \"http://my.api.example.com/payment\",\n      \"notify-on\": \"receive-payment\"\n    },\n    {\n      \"uuid\": \"9d5d8d2d-48c4-b5e0-6eef-b8b75861ce42\",\n      \"endpoint\": \"http://my.api.example.com/payment-backup\",\n      \"notify-on\": \"receive-payment\"\n    }\n  ]\n}\n            "
+				}
+			]
+		},
+		{
+			"name": "dev:  Mock deleteWebhook",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-api-test",
+						"value": "mock"
+					},
+					{
+						"key": "x-api-key",
+						"value": "jK1zZpYm6sF3FTB73a14G67eU6w1Q7Ce"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://zoona-test.apigee.net/zap/payment/code/2344",
+					"protocol": "https",
+					"host": [
+						"zoona-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"zap",
+						"payment",
+						"code",
+						"2344"
+					]
+				},
+				"description": "Call the development environment deleteWebhook"
+			},
+			"response": [
+				{
+					"id": "0cc087a2-ac46-4681-bc27-e5a0dc6476d9",
+					"name": "dev:  Mock deleteWebhook",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-api-test",
+								"value": "mock",
+								"disabled": false
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://zoona-test.apigee.net/zap/payment/code/2344",
+							"protocol": "https",
+							"host": [
+								"zoona-test",
+								"apigee",
+								"net"
+							],
+							"path": [
+								"zap",
+								"payment",
+								"code",
+								"2344"
+							]
+						}
+					},
+					"status": "Okay",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, x-api-key, x-api-test, x-api-correlation-id, Authorization, x-requested-with, Accept, Content-Type, Accept-Encoding, Accept-Language, Host, Pragma, Referrer, User-Agent, Cache-Control",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3628800",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "173",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 30 Jun 2018 14:21:33 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookie": [],
+					"body": "\n{\n  \"payment-state\": \"cancelled\",\n  \"payment-code\": \"12345678\",\n  \"valid-until\": \"2018-05-01 15:00:00\",\n  \"amount\": 100,\n  \"fee\": 5,\n  \"reference\": \"INV-001\"\n}\n            "
+				}
+			]
+		}
+	]
+}

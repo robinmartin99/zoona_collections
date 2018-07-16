@@ -1,0 +1,405 @@
+{
+	"info": {
+		"_postman_id": "6a0ce76c-361d-4424-8060-5de711f903ee",
+		"name": "A Zoona Sand",
+		"description": "Collection for invoking the sandbox environment of the Zoona system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sand /heartbeat",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-test",
+						"value": "mock",
+						"disabled": true
+					},
+					{
+						"key": "x-api-key",
+						"value": "thyLKgcPgtzElKzx3cabHr5nB5GHzjs2"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://zoona-test.apigee.net/sand/heartbeat",
+					"protocol": "https",
+					"host": [
+						"zoona-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"sand",
+						"heartbeat"
+					]
+				},
+				"description": "Call the sandbox environment heartbeat"
+			},
+			"response": []
+		},
+		{
+			"name": "Sand onboardRequest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "thyLKgcPgtzElKzx3cabHr5nB5GHzjs2"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://zoona-test.apigee.net/sand/merchant/onboard",
+					"protocol": "https",
+					"host": [
+						"zoona-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"sand",
+						"merchant",
+						"onboard"
+					]
+				},
+				"description": "Call the mock environment onboard request"
+			},
+			"response": []
+		},
+		{
+			"name": "Sand balanceRequest",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "thyLKgcPgtzElKzx3cabHr5nB5GHzjs2"
+					},
+					{
+						"key": "x-api-correlation-id",
+						"value": "c61401cb-d497-4bc6-a88d-d82a1d605f75",
+						"description": "active with balance"
+					},
+					{
+						"key": "x-api-correlation-id",
+						"value": "c61401cb-d497-4bc6-a88d-d82a1d605f76",
+						"description": "Suspended",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://zoona-test.apigee.net/sand/merchant/balance",
+					"protocol": "https",
+					"host": [
+						"zoona-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"sand",
+						"merchant",
+						"balance"
+					]
+				},
+				"description": "Call the sandbox environment balanceRequest"
+			},
+			"response": []
+		},
+		{
+			"name": "Sand transactionRequest",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "thyLKgcPgtzElKzx3cabHr5nB5GHzjs2"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://zoona-test.apigee.net/sand/merchant/transactions",
+					"protocol": "https",
+					"host": [
+						"zoona-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"sand",
+						"merchant",
+						"transactions"
+					]
+				},
+				"description": "Call the mock environment transactionRequest"
+			},
+			"response": []
+		},
+		{
+			"name": "Sand requestPaymentCode",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "thyLKgcPgtzElKzx3cabHr5nB5GHzjs2"
+					},
+					{
+						"key": "x-api-correlation-id",
+						"value": "c61401cb-d497-4bc6-a88d-d82a1d605f75",
+						"description": "Success"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://zoona-test.apigee.net/sand/payment/code",
+					"protocol": "https",
+					"host": [
+						"zoona-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"sand",
+						"payment",
+						"code"
+					]
+				},
+				"description": "Call the mock environment requestPaymentCode"
+			},
+			"response": []
+		},
+		{
+			"name": "Sand queryPaymentCode Okay",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "thyLKgcPgtzElKzx3cabHr5nB5GHzjs2"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://zoona-test.apigee.net/sand/payment/code/12345678",
+					"protocol": "https",
+					"host": [
+						"zoona-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"sand",
+						"payment",
+						"code",
+						"12345678"
+					]
+				},
+				"description": "Call the mock environment queryPaymentCode"
+			},
+			"response": []
+		},
+		{
+			"name": "Sand queryPaymentCode Expired",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "thyLKgcPgtzElKzx3cabHr5nB5GHzjs2"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://zoona-test.apigee.net/sand/payment/code/12345679",
+					"protocol": "https",
+					"host": [
+						"zoona-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"sand",
+						"payment",
+						"code",
+						"12345679"
+					]
+				},
+				"description": "Call the sand environment queryPaymentCode"
+			},
+			"response": []
+		},
+		{
+			"name": "Sand deletePaymentCode Okay",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "thyLKgcPgtzElKzx3cabHr5nB5GHzjs2"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://zoona-test.apigee.net/sand/payment/code/12345678",
+					"protocol": "https",
+					"host": [
+						"zoona-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"sand",
+						"payment",
+						"code",
+						"12345678"
+					]
+				},
+				"description": "Call the mock environment deletePaymentCode"
+			},
+			"response": []
+		},
+		{
+			"name": "Sand deletePaymentCode Expired",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "thyLKgcPgtzElKzx3cabHr5nB5GHzjs2"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://zoona-test.apigee.net/sand/payment/code/12345679",
+					"protocol": "https",
+					"host": [
+						"zoona-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"sand",
+						"payment",
+						"code",
+						"12345679"
+					]
+				},
+				"description": "Call the sand environment deletePaymentCode"
+			},
+			"response": []
+		},
+		{
+			"name": "Sand registerWebhook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "thyLKgcPgtzElKzx3cabHr5nB5GHzjs2"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://zoona-test.apigee.net/sand/merchant/notification",
+					"protocol": "https",
+					"host": [
+						"zoona-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"sand",
+						"merchant",
+						"notification"
+					]
+				},
+				"description": "Call the mock environment register Webhook"
+			},
+			"response": []
+		},
+		{
+			"name": "Sand listWebhook(s)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "thyLKgcPgtzElKzx3cabHr5nB5GHzjs2"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://zoona-test.apigee.net/sand/merchant/notification",
+					"protocol": "https",
+					"host": [
+						"zoona-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"sand",
+						"merchant",
+						"notification"
+					]
+				},
+				"description": "Call the mock environment listWebhooks with optional uuid"
+			},
+			"response": []
+		},
+		{
+			"name": "Sand deleteWebhook",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "thyLKgcPgtzElKzx3cabHr5nB5GHzjs2"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://zoona-test.apigee.net/sand/payment/code/2344",
+					"protocol": "https",
+					"host": [
+						"zoona-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"sand",
+						"payment",
+						"code",
+						"2344"
+					]
+				},
+				"description": "Call the mock environment deleteWebhook"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "120f4162-6879-454e-8986-a61d5573352e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "87afe450-fd1e-4396-a279-da262f4dc04f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
